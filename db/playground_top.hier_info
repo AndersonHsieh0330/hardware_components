@@ -1,0 +1,14 @@
+|playground_top
+s => s.IN1
+r => r.IN1
+Q << sr_latch:l1.Q
+nQ << sr_latch:l1.nQ
+
+
+|playground_top|sr_latch:l1
+s => Q.IN1
+r => nQ.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
